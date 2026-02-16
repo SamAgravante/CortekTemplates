@@ -165,10 +165,10 @@ Pick what applies:
 - 
 
 ## P1 (Fix before production if quick)
-- In Join Our Team section, arrange everything.
-- On mobile and iPad devices, the navigation menu is not visible.
-- In hero section, it would be better if you add image.
-- Improve the footer, remove the unnecessary and make it not too busy.
+- In Join Our Team section, arrange everything. (check)
+- On mobile and iPad devices, the navigation menu is not visible. (check)
+- In hero section, it would be better if you add image. (not yet)
+- Improve the footer, remove the unnecessary and make it not too busy. (check)
 
 # Sign-off
 

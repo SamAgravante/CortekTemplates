@@ -165,13 +165,13 @@ Pick what applies:
 - 
 
 ## P1 (Fix before production if quick)
-- The message part overlap the map.
-- Add question mark(?) in Why Choose Us section.
-- The nav burger is not functional (mobile & ipad).
-- In the About section, make the 7600 Happy Travelers, 50 Destinations, 12Years in Service in one horizontal line (mobile)
-- In the About section, make the 7600 Happy Travelers, 50 Destinations, 12Years in Service move to the center (ipad mini, air)
-- In the Limited Time Offer section, move Explore Destination & Inquire Now buttons to the center (ipad mini, air)
-- In the footer section, arrange eveything.
+- The message part overlap the map. (I think its good its a design)
+- Add question mark(?) in Why Choose Us section. (check)
+- The nav burger is not functional (mobile & ipad). (check)
+- In the About section, make the 7600 Happy Travelers, 50 Destinations, 12Years in Service in one horizontal line (mobile) (check)
+- In the About section, make the 7600 Happy Travelers, 50 Destinations, 12Years in Service move to the center (ipad mini, air) (check)
+- In the Limited Time Offer section, move Explore Destination & Inquire Now buttons to the center (ipad mini, air)  (check)
+- In the footer section, arrange eveything. (check)
 
 # Sign-off
 
