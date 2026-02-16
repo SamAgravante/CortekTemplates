@@ -601,26 +601,6 @@ a {
     }
 }
 
-/* Make both main columns full width */
-.hero .content .col-lg-4,
-.hero .content .col-lg-8 {
-    flex: 0 0 100%;
-    max-width: 100%;
-}
-
-    /* Then make icon boxes 2 columns */
-    .hero .content .col-lg-8 .row .col-xl-4 {
-        flex: 0 0 50%;
-        max-width: 50%;
-    }
-
-    /* Everything full width */
-.hero .content .col-lg-4,
-.hero .content .col-lg-8,
-.hero .content .col-lg-8 .row .col-xl-4 {
-  flex: 0 0 100%;
-  max-width: 100%;
-}
 /*--------------------------------------------------------------
 # Section Titles
 --------------------------------------------------------------*/
