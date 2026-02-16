@@ -24,14 +24,14 @@
 ## 2) Core Content & Branding (trust + polish)
 
 ### Brand Identity
-- [] Correct business name shown (header + footer)
-- [] Correct tagline/description
+- [ ] Correct business name shown (header + footer)
+- [ ] Correct tagline/description
 - [ ] Logo renders (light/dark if applicable)
-- [] Favicon displays (browser tab)
+- [ ] Favicon displays (browser tab)
 
 ### Copy & Details
 - [ ] Spelling/grammar pass (scan every section)
-- [] Contact details are correct:
+- [ ] Contact details are correct:
   - [] Phone number
   - [] Email
   - [] Address
@@ -60,8 +60,8 @@
 ## 4) Mobile Responsiveness (PH-first behavior)
 
 Test on Chrome DevTools:
-- [🗸] iPhone 12/13 size
-- [🗸] 360×800 Android size
+- [ ] iPhone 12/13 size
+- [ ] 360×800 Android size
 
 Checks:
 - [🗸] No horizontal scrolling
@@ -166,6 +166,9 @@ Pick what applies:
 
 ## P1 (Fix before production if quick)
 - In Join Our Team section, arrange everything.
+- On mobile and iPad devices, the navigation menu is not visible.
+- In hero section, it would be better if you add image.
+- Improve the footer, remove the unnecessary and make it not too busy.
 
 # Sign-off
 
