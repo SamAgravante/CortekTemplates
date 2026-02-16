@@ -170,7 +170,7 @@ a:hover {
 --------------------------------------------------------------*/
 .header {
   background-color: var(--bg-white);
-  padding: 15px 0;
+  padding: 5px 0;
 }
 
 .header .branding {
@@ -197,6 +197,22 @@ a:hover {
 
 .header .logo a:hover {
   color: var(--primary-navy);
+}
+
+    .header .logo {
+        display: flex;
+        align-items: center;
+    }
+
+    .header .logo-img {
+        height: 100px; /* adjust if you want bigger/smaller */
+        width: auto;
+        display: block;
+    }
+@media (max-width: 768px) {
+    .header .logo-img {
+        height: 34px;
+    }
 }
 
 /*--------------------------------------------------------------
