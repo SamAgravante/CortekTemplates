@@ -1926,3 +1926,19 @@ body {
             background: linear-gradient(90deg, #d4af37, #f4d06f);
             border-radius: 2px;
         }
+
+/* Extra CSS Files to Fix AI Chatbot Widget */
+@media (max-width: 768px) {
+    /* Target the specific Elfsight application class */
+    .elfsight-app-be7d5ac5-46ce-4d3e-ad98-1e0ca8234692 {
+        max-width: 100vw;
+        overflow-x: hidden;
+    }
+    
+    /* Global fix to prevent ANY horizontal scrolling on the body */
+    body, html {
+        overflow-x: hidden;
+        width: 100%;
+        position: relative;
+    }
+}
