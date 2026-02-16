@@ -165,6 +165,10 @@ Pick what applies:
 - 
 
 ## P1 (Fix before production if quick)
+- Add question mark(?) in Why Choose Us section.
+- In mobile & ipad version, the navigation each section is invisible.
+- After the hero section, make the 20+Shows Played, 98%Repeat Bookings, 10+Years Performing in one horizontal line (mobile).
+- After the hero section, make the 20+Shows Played, 98%Repeat Bookings, 10+Years Performing move to the center (ipad mini & air).
 - 
 
 # Sign-off
