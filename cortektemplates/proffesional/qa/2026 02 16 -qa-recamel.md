@@ -165,7 +165,6 @@ Pick what applies:
 - 
 
 ## P1 (Fix before production if quick)
-- The message part overlap the map. (I think its good its a design)
 - Add question mark(?) in Why Choose Us section. (check)
 - The nav burger is not functional (mobile & ipad). (check)
 - In the About section, make the 7600 Happy Travelers, 50 Destinations, 12Years in Service in one horizontal line (mobile) (check)
