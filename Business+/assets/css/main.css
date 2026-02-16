@@ -565,7 +565,7 @@ body {
 
 /*--------------------------------------------------------------
 # About Section
---------------------------------------------------------------*/
+--------------------------------------------------------------
 .about {
   padding: 60px 0;
   display: flex;
@@ -651,7 +651,198 @@ body {
     grid-template-columns: 1fr;
   }
 }
+/*--------------------------------------------------------------
+# Enhanced Careers Section with Divider
+--------------------------------------------------------------*/
+.careers-section {
+    padding: 120px 0;
+    background: #fafbfc;
+}
 
+/* Career Section Styling */
+#careers .content {
+    padding: 0 15px; /* Add padding to content container */
+}
+
+    #careers .content h3 {
+        font-size: 2rem;
+        font-weight: 700;
+        margin-bottom: 30px;
+        color: var(--heading-color);
+        position: relative;
+        padding-bottom: 15px;
+        padding-left: 20px; /* Add left padding to heading */
+    }
+
+        #careers .content h3::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 60px;
+            height: 3px;
+            background: var(--gradient-accent);
+            border-radius: 2px;
+        }
+
+    /* Enhanced List Styling */
+    #careers .content ul {
+        list-style: none;
+        padding: 0 20px; /* Add horizontal padding to container */
+        margin: 0;
+    }
+
+        #careers .content ul li {
+            padding: 25px 20px; /* Add horizontal padding to each item */
+            display: flex;
+            align-items: flex-start;
+            gap: 20px;
+            border-bottom: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
+        }
+
+            #careers .content ul li:first-child {
+                padding-top: 0;
+                padding-bottom: 25px;
+            }
+
+            #careers .content ul li:last-child {
+                border-bottom: none;
+            }
+
+            #careers .content ul li i {
+                font-size: 32px;
+                color: #d4af37; /* Gold color to match the image */
+                flex-shrink: 0;
+                margin-top: 5px;
+                margin-left: 0; /* Ensure no negative margin */
+            }
+
+            #careers .content ul li div h5 {
+                font-size: 1.25rem;
+                font-weight: 600;
+                margin-bottom: 8px;
+                color: var(--heading-color);
+            }
+
+            #careers .content ul li div p {
+                font-size: 0.95rem;
+                line-height: 1.6;
+                color: color-mix(in srgb, var(--default-color), transparent 30%);
+                margin: 0;
+            }
+
+/* VERTICAL DIVIDER LINE - Main Feature */
+#careers .row {
+    position: relative;
+}
+
+/* Desktop divider - vertical line between columns (on the RIGHT of left column) */
+@media (min-width: 992px) {
+    /* Position divider on the right side of the FIRST column (left side content) */
+    #careers .col-lg-6:first-child {
+        position: relative;
+        padding-right: 60px; /* Increased for better spacing */
+    }
+
+        #careers .col-lg-6:first-child::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 3px;
+            height: 100%;
+            background: linear-gradient(180deg, transparent 0%, #d4af37 10%, #d4af37 90%, transparent 100% );
+            border-radius: 2px;
+        }
+
+    /* Add padding to second column for spacing */
+    #careers .col-lg-6:last-child {
+        padding-left: 60px; /* Increased for better spacing */
+    }
+}
+
+/* Alternative solid border style */
+.careers-with-border #careers .col-lg-6:first-child {
+    border-right: 3px solid #d4af37;
+    padding-right: 50px;
+}
+
+.careers-with-border #careers .col-lg-6:last-child {
+    padding-left: 50px;
+}
+
+/* Mobile: horizontal divider instead */
+@media (max-width: 991px) {
+    #careers .col-lg-6:first-child {
+        padding-bottom: 40px;
+        margin-bottom: 40px;
+        border-bottom: 3px solid #d4af37;
+    }
+
+    #careers .col-lg-6:last-child {
+        padding-top: 0;
+    }
+}
+
+/* Section title enhancements */
+#careers .section-title h2 {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+#careers .section-title p {
+    font-size: 1.125rem;
+    color: color-mix(in srgb, var(--default-color), transparent 30%);
+}
+
+/* Hover effects for list items */
+#careers .content ul li {
+    transition: all 0.3s ease;
+    border-radius: 8px; /* Pre-add border radius */
+}
+
+    #careers .content ul li:hover {
+        transform: translateX(5px);
+        background: rgba(212, 175, 55, 0.03);
+        padding-left: 25px; /* Slightly increase left padding on hover */
+        box-shadow: 0 2px 8px rgba(212, 175, 55, 0.1);
+    }
+
+        #careers .content ul li:hover i {
+            transform: scale(1.1);
+            color: #E5C158; /* Lighter gold on hover */
+        }
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    #careers .content h3 {
+        font-size: 1.75rem;
+    }
+
+    #careers .content ul li {
+        padding: 20px 0;
+    }
+
+        #careers .content ul li i {
+            font-size: 28px;
+        }
+
+        #careers .content ul li div h5 {
+            font-size: 1.1rem;
+        }
+}
+
+/* Optional: Add decorative element to match the gold accent */
+#careers .section-title h2::after {
+    content: '';
+    display: block;
+    width: 80px;
+    height: 4px;
+    background: linear-gradient(90deg, #d4af37, #f4d06f);
+    margin: 20px auto 0;
+    border-radius: 2px;
+}
 /*--------------------------------------------------------------
 # Services Section
 --------------------------------------------------------------*/
@@ -1344,3 +1535,394 @@ body {
   color: var(--primary-navy);
 }
 
+
+/*--------------------------------------------------------------
+# Enhanced About Us Section - Custom Design
+--------------------------------------------------------------*/
+#about.about {
+    padding: 80px 0;
+    background: linear-gradient(135deg, #FAF8F5 0%, #ffffff 100%);
+    position: relative;
+    overflow: hidden;
+}
+
+    /* Decorative background elements */
+    #about.about::before {
+        content: '';
+        position: absolute;
+        top: -100px;
+        right: -100px;
+        width: 400px;
+        height: 400px;
+        background: radial-gradient(circle, rgba(212, 175, 55, 0.06) 0%, transparent 70%);
+        border-radius: 50%;
+        pointer-events: none;
+    }
+
+    #about.about::after {
+        content: '';
+        position: absolute;
+        bottom: -150px;
+        left: -150px;
+        width: 500px;
+        height: 500px;
+        background: radial-gradient(circle, rgba(10, 37, 64, 0.04) 0%, transparent 70%);
+        border-radius: 50%;
+        pointer-events: none;
+    }
+
+/* Container styling */
+#about .content {
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 2;
+}
+
+    /* Title styling */
+    #about .content h3 {
+        font-size: 2.5rem;
+        font-weight: 700;
+        margin-bottom: 25px;
+        color: var(--primary-navy);
+        letter-spacing: -0.02em;
+        text-align: center;
+        position: relative;
+        padding-bottom: 20px;
+    }
+
+        #about .content h3::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 4px;
+            background: linear-gradient(90deg, #d4af37, #f4d06f);
+            border-radius: 2px;
+        }
+
+    /* Description paragraph */
+    #about .content > p {
+        font-size: 1.125rem;
+        line-height: 1.9;
+        color: var(--text-medium);
+        margin-bottom: 50px;
+        text-align: center;
+        max-width: 900px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    /* Grid of feature cards */
+    #about .content ul {
+        list-style: none;
+        padding: 0;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+        margin: 0;
+    }
+
+        #about .content ul li {
+            display: flex;
+            align-items: flex-start;
+            padding: 35px 30px;
+            background: var(--bg-white);
+            border-radius: 12px;
+            border-left: 5px solid #d4af37;
+            box-shadow: 0 4px 20px rgba(10, 37, 64, 0.06);
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            position: relative;
+            overflow: hidden;
+        }
+
+            /* Subtle gradient overlay on hover */
+            #about .content ul li::before {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                background: linear-gradient(135deg, rgba(212, 175, 55, 0.03) 0%, transparent 50%);
+                opacity: 0;
+                transition: opacity 0.4s ease;
+                z-index: 0;
+            }
+
+            #about .content ul li:hover::before {
+                opacity: 1;
+            }
+
+            #about .content ul li:hover {
+                transform: translateY(-8px) translateX(5px);
+                box-shadow: 0 12px 35px rgba(10, 37, 64, 0.12);
+                border-left-width: 8px;
+            }
+
+        /* Icon styling */
+        #about .content ul i {
+            flex-shrink: 0;
+            font-size: 48px;
+            color: #d4af37;
+            margin-right: 25px;
+            line-height: 1;
+            transition: all 0.3s ease;
+            position: relative;
+            z-index: 1;
+        }
+
+        #about .content ul li:hover i {
+            transform: scale(1.15) rotate(5deg);
+            color: #E5C158;
+        }
+
+        /* Text content */
+        #about .content ul li > div {
+            position: relative;
+            z-index: 1;
+        }
+
+        #about .content ul h5 {
+            font-size: 1.3rem;
+            font-weight: 700;
+            margin-bottom: 10px;
+            color: var(--primary-navy);
+            letter-spacing: -0.01em;
+        }
+
+        #about .content ul p {
+            font-size: 1rem;
+            line-height: 1.7;
+            color: var(--text-medium);
+            margin: 0;
+        }
+
+/* Responsive design */
+@media (max-width: 768px) {
+    #about .content ul {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    #about .content h3 {
+        font-size: 2rem;
+    }
+
+    #about .content > p {
+        font-size: 1rem;
+    }
+
+    #about .content ul li {
+        padding: 25px 20px;
+    }
+
+    #about .content ul i {
+        font-size: 38px;
+    }
+
+    #about .content ul h5 {
+        font-size: 1.15rem;
+    }
+}
+
+/*--------------------------------------------------------------
+# Enhanced Methodology Section - Custom Design
+--------------------------------------------------------------*/
+#methodology.about {
+    padding: 80px 0;
+    background: var(--bg-white);
+    position: relative;
+}
+
+/* Timeline-style layout for methodology */
+#methodology .content h3 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 25px;
+    color: var(--primary-navy);
+    letter-spacing: -0.01em;
+    position: relative;
+    padding-bottom: 15px;
+    padding-left: 25px;
+    border-left: 5px solid #d4af37;
+}
+
+#methodology .content p {
+    font-size: 1.05rem;
+    line-height: 1.8;
+    color: var(--text-medium);
+    margin-bottom: 30px;
+    padding-left: 25px;
+}
+
+/* Process cards with timeline */
+#methodology .content ul {
+    list-style: none;
+    padding: 0;
+    margin: 40px 0 0 0;
+    position: relative;
+}
+
+
+    #methodology .content ul li {
+        display: flex;
+        align-items: flex-start;
+        padding: 30px 30px 30px 20px;
+        margin-bottom: 25px;
+        background: linear-gradient(135deg, #FAF8F5 0%, #ffffff 100%);
+        border-radius: 12px;
+        box-shadow: 0 4px 15px rgba(10, 37, 64, 0.05);
+        transition: all 0.4s ease;
+        position: relative;
+        border: 1px solid rgba(212, 175, 55, 0.1);
+    }
+
+        #methodology .content ul li:last-child {
+            margin-bottom: 0;
+        }
+
+        #methodology .content ul li:hover {
+            transform: translateX(10px);
+            box-shadow: 0 8px 30px rgba(10, 37, 64, 0.12);
+            border-color: rgba(212, 175, 55, 0.3);
+            background: var(--bg-white);
+        }
+
+
+    /* Icon in circle */
+    #methodology .content ul i {
+        flex-shrink: 0;
+        font-size: 32px;
+        color: #d4af37;
+        margin-right: 20px;
+        line-height: 1;
+        width: 65px;
+        height: 65px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: linear-gradient(135deg, rgba(212, 175, 55, 0.1) 0%, rgba(212, 175, 55, 0.05) 100%);
+        border-radius: 50%;
+        border: 2px solid rgba(212, 175, 55, 0.2);
+        transition: all 0.3s ease;
+    }
+
+    #methodology .content ul li:hover i {
+        transform: rotate(360deg);
+        background: linear-gradient(135deg, rgba(212, 175, 55, 0.2) 0%, rgba(212, 175, 55, 0.1) 100%);
+        border-color: rgba(212, 175, 55, 0.4);
+    }
+
+    #methodology .content ul h5 {
+        font-size: 1.25rem;
+        font-weight: 700;
+        margin-bottom: 10px;
+        color: var(--primary-navy);
+        letter-spacing: -0.01em;
+    }
+
+    #methodology .content ul p {
+        font-size: 0.98rem;
+        line-height: 1.7;
+        color: var(--text-medium);
+        margin: 0;
+        padding-left: 0;
+    }
+
+/* Two-column layout for methodology intro sections */
+#methodology .row.gy-4 > .col-lg-6 .content {
+    background: #FAF8F5;
+    padding: 40px 35px;
+    border-radius: 12px;
+    height: 100%;
+    border-left: 5px solid #d4af37;
+    transition: all 0.3s ease;
+}
+
+    #methodology .row.gy-4 > .col-lg-6 .content:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 8px 25px rgba(10, 37, 64, 0.08);
+        border-left-width: 8px;
+    }
+
+    #methodology .row.gy-4 > .col-lg-6 .content h3 {
+        border-left: none;
+        padding-left: 0;
+        margin-bottom: 20px;
+        font-size: 1.75rem;
+    }
+
+    #methodology .row.gy-4 > .col-lg-6 .content p {
+        padding-left: 0;
+    }
+
+/* Responsive design */
+@media (max-width: 768px) {
+    #methodology .content h3 {
+        font-size: 1.75rem;
+    }
+
+    #methodology .content ul::before {
+        left: 32px;
+    }
+
+    #methodology .content ul li {
+        padding: 25px 20px 25px 15px;
+    }
+
+        #methodology .content ul li::before {
+            width: 16px;
+            height: 16px;
+            left: -8px;
+        }
+
+    #methodology .content ul i {
+        width: 55px;
+        height: 55px;
+        font-size: 28px;
+        margin-right: 15px;
+    }
+
+    #methodology .content ul h5 {
+        font-size: 1.1rem;
+    }
+
+    #methodology .row.gy-4 > .col-lg-6 .content {
+        padding: 30px 25px;
+    }
+}
+
+/* Additional spacing for full-width methodology content */
+#methodology .row.gy-4.mt-4 .col-lg-12 .content {
+    background: transparent;
+    padding: 0;
+    border: none;
+}
+
+    #methodology .row.gy-4.mt-4 .col-lg-12 .content:hover {
+        transform: none;
+        box-shadow: none;
+    }
+
+    #methodology .row.gy-4.mt-4 .col-lg-12 .content h3 {
+        text-align: center;
+        border-left: none;
+        padding-left: 0;
+        padding-bottom: 20px;
+        margin-bottom: 50px;
+    }
+
+        #methodology .row.gy-4.mt-4 .col-lg-12 .content h3::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 4px;
+            background: linear-gradient(90deg, #d4af37, #f4d06f);
+            border-radius: 2px;
+        }
