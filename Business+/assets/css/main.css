@@ -1404,7 +1404,7 @@ body {
   visibility: hidden;
   opacity: 0;
   right: 20px;
-  bottom: 20px;
+  bottom: 100px;
   z-index: 99999;
   background: var(--accent-gold);
   width: 48px;
@@ -1429,7 +1429,7 @@ body {
 .scroll-top.active {
   visibility: visible;
   opacity: 1;
-  bottom: 20px;
+  bottom: 100px;
 }
 
 /*--------------------------------------------------------------
