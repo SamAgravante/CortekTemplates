@@ -24,10 +24,10 @@
 ## 2) Core Content & Branding (trust + polish)
 
 ### Brand Identity
-- [] Correct business name shown (header + footer)
-- [] Correct tagline/description
+- [ ] Correct business name shown (header + footer)
+- [ ] Correct tagline/description
 - [ ] Logo renders (light/dark if applicable)
-- [] Favicon displays (browser tab)
+- [ ] Favicon displays (browser tab)
 
 ### Copy & Details
 - [ ] Spelling/grammar pass (scan every section)
@@ -60,14 +60,14 @@
 ## 4) Mobile Responsiveness (PH-first behavior)
 
 Test on Chrome DevTools:
-- [🗸] iPhone 12/13 size
-- [🗸] 360×800 Android size
+- [ ] iPhone 12/13 size
+- [ ] 360×800 Android size
 
 Checks:
 - [🗸] No horizontal scrolling
-- [] Text is readable (no tiny font)
-- [] Buttons are tappable (no overlapping)
-- [] Hero content doesn’t overflow
+- [ ] Text is readable (no tiny font)
+- [ ] Buttons are tappable (no overlapping)
+- [ ] Hero content doesn’t overflow
 - [ ] Gallery tiles stack correctly
 - [ ] Contact block remains usable
 
@@ -75,7 +75,7 @@ Checks:
 
 ## 5) Performance & Loading (speed matters)
 
-- [] First load feels acceptable on mobile (target: “fast enough”)
+- [ ] First load feels acceptable on mobile (target: “fast enough”)
 - [ ] Images not excessively heavy (avoid multi-MB each)
 - [ ] Lighthouse quick check (optional but recommended):
   - [ ] Performance: ____ / 100
@@ -98,8 +98,8 @@ Pick what applies:
 - [ ] Instagram link opens correct profile
 
 ### If using map embed
-- [] Map loads without errors
-- [] Pin/location matches address
+- [ ] Map loads without errors
+- [ ] Pin/location matches address
 
 ### If using any form submission flow
 - [ ] Submission path is confirmed (where do leads go?)
@@ -120,7 +120,7 @@ Pick what applies:
 
 ## 8) SEO & Sharing Basics (simple but important)
 
-- [] Page title is correct (browser tab)
+- [ ] Page title is correct (browser tab)
 - [ ] Meta description exists (if you set one)
 - [ ] OG preview acceptable (optional):
   - [ ] If shared in Messenger/FB, preview image/title are acceptable (if configured)
@@ -166,6 +166,12 @@ Pick what applies:
 
 ## P1 (Fix before production if quick)
 - The message part overlap the map.
+- Add question mark(?) in Why Choose Us section.
+- The nav burger is not functional (mobile & ipad).
+- In the About section, make the 7600 Happy Travelers, 50 Destinations, 12Years in Service in one horizontal line (mobile)
+- In the About section, make the 7600 Happy Travelers, 50 Destinations, 12Years in Service move to the center (ipad mini, air)
+- In the Limited Time Offer section, move Explore Destination & Inquire Now buttons to the center (ipad mini, air)
+- In the footer section, arrange eveything.
 
 # Sign-off
 
