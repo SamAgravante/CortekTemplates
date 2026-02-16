@@ -8556,3 +8556,18 @@ section,
 .starter-section {
   /* Add your styles here */
 }
+
+
+/* Nav Menu Fix (Mobile) */
+body.mobile-nav-active .header {
+    /* Disabling backdrop-filter allows the child 
+       navmenu's 'position: fixed' to work correctly 
+       relative to the viewport again.
+    */
+    backdrop-filter: none !important;
+    
+    /* Optional: Make header transparent so it doesn't 
+       clash with the menu's own background color.
+    */
+    background-color: transparent !important;
+}
