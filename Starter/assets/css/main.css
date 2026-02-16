@@ -188,7 +188,7 @@ img {
         font-size: 28px;
         cursor: pointer;
         line-height: 1;
-        z-index: 9999;
+        z-index: 99999;
         position: relative;
     }
 
