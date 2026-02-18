@@ -2006,3 +2006,27 @@ a {
         position: relative;
     }
 }
+
+/* =========================================
+   MOBILE MENU INVISIBLE BACKGROUND FIX 2.0
+   ========================================= */
+@media (max-width: 1199px) {
+    /* 1. Stop the header from trapping the menu */
+    .header {
+        backdrop-filter: none !important;
+        -webkit-backdrop-filter: none !important;
+        transform: none !important;
+        
+        /* 2. NEW: Fix the centering safely without using transform */
+        left: 0 !important;
+        right: 0 !important;
+        margin-left: auto !important;
+        margin-right: auto !important;
+    }
+
+    /* 3. Force the menu background to cover the full screen height */
+    .navmenu {
+        height: 100vh !important;
+        bottom: auto !important; 
+    }
+}
