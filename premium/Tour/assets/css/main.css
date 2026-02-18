@@ -890,7 +890,7 @@ section,
 .travel-hero {
   position: relative;
   overflow: hidden;
-  min-height: 70vh;
+  min-height: 100vh;
   display: flex;
   align-items: center;
   padding: 120px 0 60px 0;
