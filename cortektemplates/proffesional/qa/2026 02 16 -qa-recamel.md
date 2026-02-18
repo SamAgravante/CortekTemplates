@@ -92,7 +92,7 @@ Checks:
 Pick what applies:
 
 ### If using click-to-call / email / social links
-- [] `tel:` link opens dialer
+- [ ] `tel:` link opens dialer
 - [ ] `mailto:` link opens email app
 - [ ] Facebook link opens correct page
 - [ ] Instagram link opens correct profile
@@ -165,12 +165,11 @@ Pick what applies:
 - 
 
 ## P1 (Fix before production if quick)
-- Add question mark(?) in Why Choose Us section. (check)
-- The nav burger is not functional (mobile & ipad). (check)
-- In the About section, make the 7600 Happy Travelers, 50 Destinations, 12Years in Service in one horizontal line (mobile) (check)
-- In the About section, make the 7600 Happy Travelers, 50 Destinations, 12Years in Service move to the center (ipad mini, air) (check)
-- In the Limited Time Offer section, move Explore Destination & Inquire Now buttons to the center (ipad mini, air)  (check)
-- In the footer section, arrange eveything. (check)
+- For example, when I click on Home, Tour in the navigation remains highlighted (ipad mini).
+- For example, when I click on Home, Testimonials in the navigation remains highlighted (ipad air).
+- For example, when I click on Home, Contacts in the navigation remains highlighted (ipad pro).  
+- In the Limited Time Offer section, move Explore Destination & Inquire Now buttons to the center (ipad mini, air) note: pls move the word itself to the center
+- Remove the Subscribe for Deals section.
 
 # Sign-off
 
