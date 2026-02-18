@@ -159,7 +159,7 @@ img {
     }
 
     .header .logo img {
-        max-height: 70px;
+        max-height: 30px;
         transition: all 0.3s ease;
         filter: drop-shadow(0 2px 8px rgba(255, 107, 53, 0.3));
     }
@@ -446,7 +446,7 @@ section, .section {
 # Hero Section - Premium Design
 --------------------------------------------------------------*/
 .hero {
-    padding: 180px 0 100px;
+    padding: 180px 0 80px;
     position: relative;
     overflow: hidden;
     background: linear-gradient(135deg, #F8FAFB 0%, #ffffff 100%);
@@ -477,6 +477,7 @@ section, .section {
     .hero .hero-content {
         position: relative;
         z-index: 2;
+        margin: 20px;
     }
 
         .hero .hero-content .hero-badge {
@@ -498,10 +499,10 @@ section, .section {
             }
 
         .hero .hero-content h1 {
-            font-size: 4rem;
+            font-size: 3rem;
             font-weight: 700;
             line-height: 1.15;
-            margin-bottom: 2rem;
+            margin-bottom: 1rem;
             color: var(--primary-dark);
         }
 
@@ -526,7 +527,7 @@ section, .section {
         .hero .hero-content p {
             font-size: 1.25rem;
             line-height: 1.8;
-            margin-bottom: 3rem;
+            margin-bottom: 1.5rem;
             color: var(--text-muted);
             max-width: 600px;
         }
@@ -588,19 +589,26 @@ section, .section {
 
     /* Hero Stats - Modern Cards */
     .hero .hero-stats {
-        display: flex;
-        gap: 2rem;
+        display: flex; /* Ensure flex is active */
+        flex-direction: row;
+        align-items: stretch; /* FORCE all items to be the same height */
+        gap: 1rem;
+        justify-content: space-between;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        padding-bottom: 10px; /* Adds breathing room for the scrollbar/shadows */
     }
 
         .hero .hero-stats .stat-item {
-            flex: 1;
-            padding: 30px 25px;
-            background: var(--surface-color);
-            border-radius: 16px;
-            border: 1px solid var(--border-color);
-            transition: all 0.3s ease;
-            position: relative;
-            overflow: hidden;
+            flex: 1 1 auto;
+            min-width: 100px; /* Keeps them from getting too squished */
+            height: 100%; /* Forces the card to fill the stretched parent height */
+            padding: 15px 10px;
+            
+            /* OPTIONAL: Centers the text vertically if one card is much taller */
+            display: flex;
+            flex-direction: column;
+            justify-content: center; 
         }
 
             .hero .hero-stats .stat-item::before {
