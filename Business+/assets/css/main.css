@@ -2011,22 +2011,29 @@ a {
    MOBILE MENU INVISIBLE BACKGROUND FIX 2.0
    ========================================= */
 @media (max-width: 1199px) {
-    /* 1. Stop the header from trapping the menu */
     .header {
         backdrop-filter: none !important;
         -webkit-backdrop-filter: none !important;
         transform: none !important;
         
-        /* 2. NEW: Fix the centering safely without using transform */
         left: 0 !important;
         right: 0 !important;
         margin-left: auto !important;
         margin-right: auto !important;
     }
 
-    /* 3. Force the menu background to cover the full screen height */
     .navmenu {
         height: 100vh !important;
         bottom: auto !important; 
+    }
+}
+
+/* =========================================
+   MOBILE MENU DROPDOWN FIX
+   ========================================= */
+@media (max-width: 1199px) {
+    /* The JS adds 'dropdown-active' to the <ul>, so we target it directly to force it open */
+    .navmenu .dropdown ul.dropdown-active {
+        display: flex !important;
     }
 }
