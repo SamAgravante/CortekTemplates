@@ -136,62 +136,42 @@ a {
     }
 
 /*--------------------------------------------------------------
-# Header — Floating Pill Navbar
+# Header — Floating Pill Navbar   ← CHANGED 2, 3
 --------------------------------------------------------------*/
 .header {
-    /* Layout & Positioning */
+    /* CHANGED 2: centred floating pill — was left:0 right:0 top:0 full-width bar */
     position: fixed;
-    top: 20px;
-    left: 0; 
-    right: 0;
-    margin-left: auto;
-    margin-right: auto; /* Centers the header without transform */
-    width: calc(100% - 48px);
+    top: 20px; /* hovers 20px above viewport edge */
+    left: 50%;
+    transform: translateX(-50%); /* horizontally centred */
+    width: calc(100% - 48px); /* 24px margin each side */
     max-width: 1200px;
     z-index: 9999;
+    /* CHANGED 2: full pill shape — was 0 0 12px 12px (rounded bottom only) */
+    border-radius: 100px;
+    /* CHANGED 2: lighter frosted glass matching reference screenshot */
+    background: rgba(236, 236, 236, 0.88);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    /* CHANGED 2: floating card shadow — was flat, bottom-only */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05), 0 8px 32px rgba(10, 37, 64, 0.13), inset 0 1px 0 rgba(255, 255, 255, 0.90);
+    border: 1px solid rgba(255, 255, 255, 0.72);
+    /* CHANGED 2: tighter padding keeps pill slim */
     padding: 4px 8px;
-    
-    /* Remove visuals from here to stop the "trap" */
-    background: transparent; 
-    transform: none; 
-    
-    transition: top 0.35s ease;
+    transition: background 0.35s ease, box-shadow 0.35s ease, top 0.35s ease;
 }
 
-    .header::before {
-        content: "";
-        position: absolute;
-        top: 0; left: 0; right: 0; bottom: 0;
-        z-index: -1; /* Sits behind the content */
-        
-        /* Visuals moved here */
-        border-radius: 100px;
-        background: rgba(236, 236, 236, 0.88);
-        backdrop-filter: blur(20px);
-        -webkit-backdrop-filter: blur(20px);
-        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05), 0 8px 32px rgba(10, 37, 64, 0.13), inset 0 1px 0 rgba(255, 255, 255, 0.90);
-        border: 1px solid rgba(255, 255, 255, 0.72);
-        
-        transition: background 0.35s ease, box-shadow 0.35s ease;
-    }
-
     .header.scrolled {
+        background: rgba(246, 246, 246, 0.96);
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.07), 0 16px 48px rgba(10, 37, 64, 0.16), inset 0 1px 0 rgba(255, 255, 255, 0.95);
         top: 14px;
     }
-
-        .header.scrolled::before {
-            background: rgba(246, 246, 246, 0.96);
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.07), 0 16px 48px rgba(10, 37, 64, 0.16), inset 0 1px 0 rgba(255, 255, 255, 0.95);
-        }
 
     .header .branding {
         display: flex;
         align-items: center;
         justify-content: space-between;
         padding: 0 14px;
-        /* Ensure content sits above the pseudo-background */
-        position: relative; 
-        z-index: 1;
     }
 
     .header .logo {
