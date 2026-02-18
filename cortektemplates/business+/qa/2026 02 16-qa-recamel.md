@@ -165,12 +165,6 @@ Pick what applies:
 - 
 
 ## P1 (Fix before production if quick)
-- In Join Our Team section, arrange everything (ipad pro)
-- On mobile and iPad devices, the navigation burger is not visible. 
-- In hero section, it would be better if you add image. 
-- Improve the footer, remove the unnecessary and make it not too busy.
-- In hero section, move to the center Book Consultations, Tailored Solutions, Proven Results (ipad mini, air )
-- In footer section, move everthing to the center (mobile)
 
 # Sign-off
 
